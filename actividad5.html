@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Actividad 5 - Validar campo</title>
+</head>
+<body>
+	<h1>Actividad 5: Función que valida un campo de texto</h1>
+	<label for="campo">Ingrese texto:</label>
+	<input type="text" id="campo">
+	<button type="button" onclick="validar()">Validar</button>
+
+	<script>
+		function validar() {
+			var valor = document.getElementById("campo").value;
+			if (valor === "") {
+				alert("El campo no puede estar vacío");
+			} else {
+				alert("Texto ingresado correctamente");
+			}
+		}
+	</script>
+</body>
+</html>
