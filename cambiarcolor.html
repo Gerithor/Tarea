@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cambiar color</title>
+  <style>
+    body 
+    button { margin-left: 0.5rem; }
+  </style>
+</head>
+<body>
+  <label for="color">Elige un color:</label>
+  <select id="color">
+    <option value="rojo">Rojo</option>
+    <option value="azul">Azul</option>
+    <option value="verde">Verde</option>
+    <option value="negro">Negro</option>
+  </select>
+  <button type="button" onclick="aplicarColor()">Aplicar color</button>
+
+  <script>
+    function aplicarColor() {
+      const sel = document.getElementById('color');
+      const val = sel.value;
+      const mapa = { rojo: 'red', azul: 'blue', verde: 'green', negro: 'black' };
+      document.body.style.backgroundColor = mapa[val] || '';
+    }
+  </script>
+</body>
+</html>

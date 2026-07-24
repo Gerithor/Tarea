@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Verificar contraseña</title>
+</head>
+<body>
+	<input type="password" id="clave" placeholder="Ingresa la clave">
+	<button onclick="verificar()">Ingresar</button>
+
+	<script>
+		
+		function verificar() {
+			const c = document.getElementById('clave').value;
+			alert(c === '1234' ? 'Acceso permitido' : 'Acceso denegado');
+		}
+	</script>
+</body>
+</html>

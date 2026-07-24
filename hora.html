@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo por Hora</title>
+</head>
+<body>
+    <h1>Saludo según la hora</h1>
+    <button onclick="mostrarSaludo()">Mostrar saludo</button>
+
+    <script>
+        function mostrarSaludo() {
+            let hora = new Date().getHours();
+
+            if (hora >= 6 && hora <= 12) {
+                alert("Buenos días");
+            } else if (hora >= 13 && hora <= 19) {
+                alert("Buenas tardes");
+            } else {
+                alert("Buenas noches");
+            }
+        }
+    </script>
+</body>
+</html>
